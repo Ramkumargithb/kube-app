@@ -32,12 +32,12 @@ spec:
                   name: app-secret
                   key: db-pass
       nodeSelector:
-        zone: us-east-2a
+        zone: us-east-1a
       volumes:
         - name: vpro-db-data
           # This AWS EBS volume must already exist.
           awsElasticBlockStore:
-            volumeID: vol-0fb9676d9b4d883ed
+            volumeID: vol-0126865b8d739e139
             fsType: ext4
 
       initContainers:
