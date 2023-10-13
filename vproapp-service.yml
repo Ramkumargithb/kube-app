@@ -20,6 +20,7 @@
   spec:
     selector:
       app: vproapp
+    type: LoadBalancer
     ports:
       - protocol: TCP
         port: 80
